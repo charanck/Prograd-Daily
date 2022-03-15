@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-items">Nav - 1</a>
+        <a class="nav-items">Nav - 2</a>
+        <a class="nav-items">Nav - 3</a>
+        <a class="nav-items">Nav - 4</a>
+        <a class="nav-items">Nav - 5</a>
+    </div>
+    <h1 id="heading">Customs Laptops</h1>
+    <form action="/" id="form">
+        <fieldset>
+        <legend>Personal Details:</legend>
+        <label for="name">Enter your Name: </label>
+        <input type="text" name="name" id="name" placeholder="Your name" required><br><br>
+        <label for="mobile">Mobile Number: </label>
+        <input type="tel" name="mobile" id="mobile" placeholder="+91 9876543210" required><br><br>
+        <label for="altmobile">Alternate Number: </label>
+        <input type="tel" name="altmobile" id="altmobile" placeholder="+91 9876543210" required><br><br>
+        <label for="address">Shipping address: </label>
+        <textarea name="address" id="address" cols="150" rows="10" placeholder="Your addres" required></textarea><br><br>
+        <label for="pincode">Pin code: </label>
+        <input type="number" name="pincode" id="pincode" min="600000" max="699999" placeholder="600008" required><br><br>
+        <label for="state">State: </label>
+        <input name="state" id="state" list="stateslist" placeholder="Tamil Nadu" required></input>
+        <datalist id="stateslist">
+            <option value="Andhra Pradesh"></option>
+            <option value="Arunachal Pradesh"></option>
+            <option value="Assam"></option>
+            <option value="Bihar"></option>
+            <option value="Chhattisgarh"></option>
+            <option value="Goa"></option>
+            <option value="Gujarat"></option>
+            <option value="Haryana"></option>
+            <option value="Himachal Pradesh"></option>
+            <option value="Jharkhand"></option>
+            <option value="Karnataka"></option>
+            <option value="Kerala"></option>
+            <option value="Madhya Pradesh"></option>
+            <option value="Maharashtra"></option>
+            <option value="Manipur"></option>
+            <option value="Meghalaya"></option>
+            <option value="Mizoram"></option>
+            <option value="Nagaland"></option>
+            <option value="Odisha"></option>
+            <option value="Punjab"></option>
+            <option value="Rajasthan"></option>
+            <option value="Sikkim"></option>
+            <option value="Tamil Nadu"></option>
+            <option value="Telangana"></option>
+            <option value="Tripura"></option>
+            <option value="Uttar Pradesh"></option>
+            <option value="Uttarakhand"></option>
+            <option value="West Bengal"></option>
+            <option value="Andaman and Nicobar Islands"></option>
+            <option value="Chandigarh"></option>
+            <option value="Dadra & Nagar Haveli and Daman & Diu"></option>
+            <option value="Delhi"></option>
+            <option value="Jammu and Kashmir"></option>
+            <option value="Lakshadweep"></option>
+            <option value="Puducherry"></option>
+            <option value="Ladakh"></option>
+        </datalist>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Laptop Configuration: </legend>
+        <label for="screensize">Screen size: </label>
+        <select name="screensize" id="screensize">
+            <option value="13inch">13 Inch</option>
+            <option value="14inch" selected>14 Inch</option>
+            <option value="15inch">15 Inch</option>
+            <option value="16inch">16 Inch</option>
+        </select><br><br>
+        <label for="cpu">CPU: </label>
+        <select name="cpu" id="cpu">
+            <option value="intel i5">Intel i5 10th gen</option>
+            <option value="intel i7" selected>Intel i7 10th gen</option>
+            <option value="ryzen 5 5600">Ryzen 5 5600</option>
+            <option value="yzen 5 5600">Ryzen 5 5600</option>
+        </select><br><br>
+        <label for="ram">Ram capacity: </label>
+        <select name="ram" id="ram">
+            <option value="8gb">8gb</option>
+            <option value="16gb">16gb</option>
+        </select><br><br>
+        <label for="storage">Storage capacity: </label>
+        <select name="storage" id="storage">
+            <option value="512gb">512gb SSD</option>
+            <option value="1tb">1tb HDD</option>
+            <option value="512gb+1tb">512gb SSD + 1tb HDD</option>
+        </select><br><br>
+        <label for="gpu">GPU: </label>
+        <select name="gpu" id="gpu">
+            <option value="gtx1650">GTX 1650</option>
+            <option value="gtx1660">GTX 1660</option>
+        </select>
+    </fieldset><br><br>
+
+    <input type="submit" id="submit" value="Submit">
+    <input type="reset" id="clear" value="Clear">
+    </form>
+
+    <button id="float-button">Floating Button</button>
+    <script src="main.js"></script>
+</body>
+</html>

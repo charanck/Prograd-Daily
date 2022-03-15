@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+            text-align: center;
+            height:100vh;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            grid-template-areas: "one one one one"
+                                "two two empty three"
+                                "four four four four";
+        }
+        .grid-item{
+            padding: 2rem;
+            color:#fff;
+        }
+        #one{
+            grid-area: one;
+            background-color: red;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+        }
+        #one .childs{
+            background-color: chartreuse;
+            color: #333;
+        }
+        #two{
+            grid-area:two;
+            background-color: aqua;
+        }
+        #three{
+            grid-area: three;
+            background-color: blueviolet;
+        }
+        #four{
+            grid-area: four;
+            background-color: #333;
+        }
+        #empty{
+            grid-area: empty;
+        }
+    </style>
+<body>
+    <!-- <div class="grid-container">
+        <div class="grid-item" id="one">One</div>
+        <div class="grid-item" id="two">Two</div>
+        <div class="grid-item" id="three">Three</div>
+        <div class="grid-item" id="four">Four</div>
+        <div class="grid-item" id="empty">Empty</div>
+    </div> -->
+
+
+    <div class="grid-container">
+        <div class="grid-item" id="one">
+            <div class="childs">Child 1</div>
+            <div class="childs">child 2</div>
+            <div class="childs">child 3</div>
+            <div class="childs">child 4</div>
+        </div>
+        <div class="grid-item" id="two">Two</div>
+        <div class="grid-item" id="three">Three</div>
+        <div class="grid-item" id="four">Four</div>
+        <div class="grid-item" id="empty">Empty</div>
+    </div>
+
+</body>
+</html>

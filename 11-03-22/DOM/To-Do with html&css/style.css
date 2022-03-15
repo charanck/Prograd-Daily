@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.to-do-container{
+    width:500px;
+    min-height:700px;
+    margin: auto;
+    background-color: #333;
+    padding:2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: #f6f6f6;
+}
+
+#add-to-do{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border:none
+}
+
+#add-btn{
+    padding:.5rem  1.5rem;
+    background-color: #DFF8EB;
+    margin:1rem;
+    border-radius: 1rem;
+    border:none
+}
+
+#add-btn:hover{
+    background-color: rgb(88, 252, 88);
+    box-shadow: #f7f7f7 1px 1px 2px;
+}
+
+.to-do-items{
+    color:#fff;
+    width:100%;
+}
+
+.to-do-items .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #f7f7f7;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px;
+    border-right: 0;
+    border-style: solid;
+    border-radius: .2rem;
+}
+
+.delete{
+    font-size: 2rem;
+    color:#FF5252;
+    margin-left: .3rem;;
+}
+
+.completed{
+    color: #1DE9B6;
+    font-size: 2rem;
+}
+
+.delete:hover{
+    color:#b64a4a;
+}
+
+.completed:hover{
+    color: #14a782;
+    font-size: 2rem;
+}
+
+.done{
+    text-decoration: line-through;
+}

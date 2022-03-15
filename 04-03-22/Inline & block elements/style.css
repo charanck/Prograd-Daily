@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+}
+#blog-title{
+    text-align: center;
+}
+
+#blog-img{
+    height: 200px;;
+}
+
+.card{
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+table{
+    width:100%;
+    text-align: center;
+    padding:5px;
+    margin: 10px;
+}
+
+#table-heading{
+    text-align: center;
+}

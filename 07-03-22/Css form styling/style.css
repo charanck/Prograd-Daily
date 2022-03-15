@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #233142;
+}
+
+.first-color { 
+	background: #233142; 
+}
+	
+.second-color { 
+	background: #455d7a; 
+}
+
+.third-color { 
+	background: #f95959; 
+}
+
+.fourth-color { 
+	background: #e3e3e3; 
+}
+
+#heading{
+    text-align: center;
+    font-weight: bolder;
+    color: #f6e1e1;
+}
+textarea,input,select,option{
+    background-color: #f6f6f6;
+    padding:.3rem;
+    border-radius: .5rem;
+    border:none;
+}
+
+
+textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#form{
+    color:#f3f3f3;
+    padding:2rem;
+    border-radius: 1rem;
+}
+
+fieldset:hover{
+    box-shadow: #FFF 1px 1px 5px;
+}
+
+#submit{
+    background-color: rgb(129, 224, 129);
+    color: #333;
+    padding:1rem;
+}
+
+#clear{
+    background-color: lightgoldenrodyellow;
+    color:#333;
+    padding:1rem;
+}
+
+#submit:hover{
+    background-color: rgb(95, 218, 95);
+    color: rgb(0, 0, 0);
+}
+
+#clear:hover{
+    background-color: rgb(253, 253, 107);
+    color: rgb(0, 0, 0);
+}
