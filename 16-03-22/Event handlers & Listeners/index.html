@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handler & Listners</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .handler-container,.container{
+            width:100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .handler-item,.item{
+            width: 100%;
+            background-color: #333;
+            border:#fff 2px solid;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>With Even Listeners</h1>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <h1>With Even Handlers</h1>
+    <div class="handler-container">
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+        <div class="handler-item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></div>
+    </div>
+</body>
+</html>
