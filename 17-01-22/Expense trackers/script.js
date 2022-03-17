@@ -17,6 +17,7 @@ function handleAddTransaction(event){
     localStorage.setItem(text.value,`${amount.value}`);
     text.value = "";
     amount.value = "";
+    renderAll();
 }
 
 
