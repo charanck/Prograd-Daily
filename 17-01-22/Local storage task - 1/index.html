@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+    <script defer src="index.js"></script>
+    <style>
+        .container{
+            width: 200px;
+            display:flex;
+            margin:auto;
+            flex-direction: column;
+        }
+        #table{
+            margin:auto;
+            width:500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="key">Key: </label>
+        <input type="text" required id="key"><br>
+        <label for="value">Value: </label>
+        <input type="text" required id="value"><br>
+        <div class="btn">
+            <button id="set">Set</button>
+            <button id="get">Get</button>
+            <button id="delete">Delete</button>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <table id="table">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </table>
+</body>
+</html>
