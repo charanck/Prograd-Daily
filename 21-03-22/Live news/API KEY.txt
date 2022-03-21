@@ -1,0 +1,291 @@
+c24192cf67664042a97c5fdbcc0a58e9
+
+var url = 'https://newsapi.org/v2/everything?' +
+          'q=Apple&' +
+          'from=2022-03-21&' +
+          'sortBy=popularity&' +
+          'apiKey=c24192cf67664042a97c5fdbcc0a58e9';
+
+var req = new Request(url);
+
+fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })
+
+
+{
+"status": "ok",
+"totalResults": 194,
+-"articles": [
+-{
+-"source": {
+"id": "bbc-news",
+"name": "BBC News"
+},
+"author": "https://www.facebook.com/bbcnews",
+"title": "Not smart but clever? The return of 'dumbphones'",
+"description": "Why sales of very basic mobile phones, without apps and internet connection, are increasing.",
+"url": "https://www.bbc.co.uk/news/business-60763168",
+"urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F393/production/_123755326_gettyimages-645863306.jpg",
+"publishedAt": "2022-03-21T00:04:45Z",
+"content": "By Suzanne BearneBusiness reporter\r\nImage source, Getty Images\r\nImage caption, The Nokia 3310 phone is one of the best-selling handsets of all time, selling 126 million units\r\nSeventeen-year-old Robi… [+7073 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "MarketBeat"
+},
+"author": "MarketBeat Staff",
+"title": "After An Overdone Selloff, It’s Time to Sign for DocuSign Shares",
+"description": "DocuSign, Inc. (NASDAQ: DOCU) has come full circle. After riding the remote workforce trend to the $300 level last summer, the e-signature leader has seen its share price return to...",
+"url": "https://www.marketbeat.com/originals/after-an-overdone-selloff-its-time-to-sign-for-docusign-shares/",
+"urlToImage": "https://assets.entrepreneur.com/providers/marketbeat/hero-image-marketbeat-422691.jpeg",
+"publishedAt": "2022-03-21T05:00:00Z",
+"content": "DocuSign, Inc. (NASDAQ: DOCU) has come full circle. After riding the remote workforce trend to the $300 level last summer, the e-signature leader has seen its share price return to where it all began… [+5005 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Slashdot.org"
+},
+"author": "EditorDavid",
+"title": "How to Eliminate the World's Need for Passwords",
+"description": "The board members of the FIDO alliance include Amazon, Google, PayPal, RSA, and Apple and Microsoft (as well as Intel and Arm). It describes its mission as reducing the world's \"over-reliance on passwords.\" \n\nToday Wired reports that the group thinks \"it has …",
+"url": "https://it.slashdot.org/story/22/03/21/0330232/how-to-eliminate-the-worlds-need-for-passwords",
+"urlToImage": "https://a.fsdn.com/sd/topics/security_64.png",
+"publishedAt": "2022-03-21T03:39:00Z",
+"content": "The board members of the FIDO alliance include Amazon, Google, PayPal, RSA, and Apple and Microsoft (as well as Intel and Arm). It describes its mission as reducing the world's \"over-reliance on pass… [+3497 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "AppleInsider"
+},
+"author": "news@appleinsider.com (Christine McKee)",
+"title": "Today only: Apple's loaded MacBook Air (M1, 16GB RAM, 1TB SSD) is on sale for $1,449",
+"description": "B&H Photo's latest 24-hour Deal Zone includes a fantastic $200 discount on Apple's current MacBook Air with an 8-core GPU, 16GB of memory and a spacious 1TB SSD.Ringing in as the cheapest MacBook Air price by over $100, B&H's 24-hour Deal Zone on Apple's high…",
+"url": "https://appleinsider.com/articles/22/03/21/today-only-apples-loaded-macbook-air-m1-16gb-ram-1tb-ssd-is-on-sale-for-1449",
+"urlToImage": "https://photos5.appleinsider.com/gallery/47549-92834-macbook-air-200-off-purple-xl.jpg",
+"publishedAt": "2022-03-21T04:08:32Z",
+"content": "AppleInsider is supported by its audience and may earn commission as an Amazon Associate and affiliate partner on qualifying purchases. These affiliate partnerships do not influence our editorial con… [+1241 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Gizmodo.jp"
+},
+"author": "塚本直樹",
+"title": "大事なMac Studioを盗まれないロックアダプタ、発売はしばしお待ちを",
+"description": "Image:Apple独自ロック？高額なパソコンを公共の場所に設置する場合には、机など固定物へのロック機構が不可欠。ましてや小柄な「MacStudio」の場合、その心配はさらに大きなものとなるはずです。そしてApple（アップル）によれば、そんなMacStudioを盗難から防ぐロックアダプタが近日発売されるそうですよ。個人宅では使うことの少ないロック機構ですが、私もオフィスを構えていた頃は、パソコ",
+"url": "https://www.gizmodo.jp/2022/03/mac-studio-rock.html",
+"urlToImage": "https://assets.media-platform.com/gizmodo/dist/images/2022/03/19/1-w960.jpg",
+"publishedAt": "2022-03-21T00:00:00Z",
+"content": "Mac StudioAppleMac Studio\r\nMac Studio\r\nMac StudioMacRumorsApple\r\nMac Studio\r\nSource: MacRumors"
+},
+-{
+-"source": {
+"id": null,
+"name": "The A.V. Club"
+},
+"author": "Saloni Gajjar, Sam Barsanti, Gwen Ihnat, Alison Foreman, and Tim Lowery",
+"title": "April TV promises star-powered premieres of The First Lady, Roar, and Outer Range",
+"description": "Get ready for yet another barrage of your favorite film stars reigning over the small screen. April comes packed with new TV led by some big names, kicking off with Gary Oldman in Apple TV+ drama Slow Horses, and Ken Watanabe and Ansel Elgort in HBO Max’s Tok…",
+"url": "https://www.avclub.com/what-to-watch-on-tv-april-2022-the-first-lady-roar-gasl-1848663364",
+"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9dcfc76e434fbab8528d76951007cf0e.jpg",
+"publishedAt": "2022-03-21T05:00:00Z",
+"content": "Get ready for yet another barrage of your favorite film stars reigning over the small screen. April comes packed with new TV led by some big names, kicking off with Gary Oldman in Apple TV+ drama Slo… [+1161 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "HYPEBEAST"
+},
+"author": "info@hypebeast.com (HYPEBEAST), HYPEBEAST",
+"title": "Nike's Air Max 95 Arrives in Summer-Ready \"Lemon Lime\" Colorway",
+"description": "Following a range of natural-toned \"Air Sprung,\" \"Rough Green,\" and \"Ironstone\" colorways revealed earlier this year, Nike now offers an official look at the Air Max 95 \"Lemon Lime,\" a light-toned sour twist for the warmer months ahead.The upcoming pairs are …",
+"url": "https://hypebeast.com/2022/3/nikes-air-max-95-arrives-in-summer-ready-lemon-lime-colorway",
+"urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F03%2Fnike-air-max-95-lemon-lime-dq3429-100-release-info-tw.jpg?w=960&cbr=1&q=90&fit=max",
+"publishedAt": "2022-03-21T04:17:11Z",
+"content": "Following a range of natural-toned “Air Sprung,” “Rough Green,” and “Ironstone” colorways revealed earlier this year, Nike\r\n now offers an official look at the Air Max 95 “Lemon Lime,” a light-toned … [+830 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "HYPEBEAST"
+},
+"author": "info@hypebeast.com (HYPEBEAST), HYPEBEAST",
+"title": "CASETiFY Invites Yusuke Hanai For Impact Cases With 60s-Inspired Illustrations",
+"description": "CASETiFY is teaming up with Yusuke Hanai in its latest artist collaboration. Known for his knack for mixing Japanese aesthetics with American retro, the Japanese artist has a style strongly influenced by the counter-culture in the 1950s and 1960s.Based on the…",
+"url": "https://hypebeast.com/2022/3/yusuke-hanai-casetify-collaboration-collection-release-info",
+"urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F03%2Ftw-yusuke-hanai-casetify-collaboration-collection-release-info.jpg?w=960&cbr=1&q=90&fit=max",
+"publishedAt": "2022-03-21T05:47:00Z",
+"content": "CASETiFY is teaming up with Yusuke Hanai in its latest artist collaboration. Known for his knack for mixing Japanese aesthetics with American retro, the Japanese artist has a style strongly influence… [+1540 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Caschys Blog"
+},
+"author": "André Westphal",
+"title": "„Total War: Medieval II“ erscheint am 7. April 2022 für Apple iOS und Android",
+"description": "„Total War: Medieval II“ ist ursprünglich 2006 für Windows-PCs erschienen. Seitdem hat sich die Technik weiter entwickelt und so werdet ihr ab dem 7. April 2022 die Möglichkeit erhalten, den Titel auf mobilen Endgeräten mit Apple iOS und Android zu...Zum Beit…",
+"url": "https://stadt-bremerhaven.de/total-war-medieval-ii-erscheint-am-7-april-2022-fuer-apple-ios-und-android/",
+"urlToImage": "https://stadt-bremerhaven.de/wp-content/uploads/2022/03/Medieval-2.jpg",
+"publishedAt": "2022-03-21T05:30:26Z",
+"content": "„Total War: Medieval II“ ist ursprünglich 2006 für Windows-PCs erschienen. Seitdem hat sich die Technik weiter entwickelt und so werdet ihr ab dem 7. April 2022 die Möglichkeit erhalten, den Titel au… [+1020 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "IndieWire"
+},
+"author": "Bill Desowitz",
+"title": "ASC Awards: ‘Dune’ Gets Oscar Momentum with Feature Cinematography Win",
+"description": "Greig Fraser powers his way to second ASC win, but still needs to fend off \"The Power of the Dog\" cinematographer Ari Wegner.",
+"url": "https://www.indiewire.com/2022/03/asc-awards-winners-list-dune-oscars-cinematography-1234709620/",
+"urlToImage": "https://www.indiewire.com/wp-content/uploads/2021/09/rev-1-DU-10412rv4_High_Res_JPEG.jpeg?w=780",
+"publishedAt": "2022-03-21T04:50:36Z",
+"content": "Powerhouse “Dune” cinematographer Greig Fraser won the feature film prize Sunday night at the 36th annual ASC Awards (held at the organization’s clubhouse in Hollywood). This marks Fraser’s second AS… [+3048 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Srad.jp"
+},
+"author": "headless",
+"title": "iOS デバイスに詐欺アプリをインストールさせるさまざまな手法",
+"description": "ロマンス詐欺的な手法とソーシャルエンジニアリングを組み合わせて偽の暗号通貨アプリをインストールさせる組織的な詐欺キャンペーン CryptoRom で、iPhone ユーザーをターゲットにした新たな手法を Sophos が報告している\n(Sophos News の記事、\nArs Technica の記事、\nNeowin の記事、\n9to5Mac の記事)。\n\nCryptoRom ではデーティングアプリやデーティングサイト、ランダムに送信した WhatsApp メッセージなどでターゲットと親しくなり、有名な暗号通貨取…",
+"url": "https://apple.srad.jp/story/22/03/21/0033232/",
+"urlToImage": "https://srad.jp/static/topics/crime_64.png",
+"publishedAt": "2022-03-21T00:59:00Z",
+"content": "CryptoRom iPhone Sophos \r\n(Sophos News Ars Technica Neowin 9to5Mac )CryptoRom WhatsApp \r\nSophos iOS Super Signature Apple Enterprise Program TestFlight Web 2 \r\n TestFlight TestFlight SignatureTestFli… [+88 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Cnbeta.com"
+},
+"author": "study875",
+"title": "快来体验：适用于M1 Mac的首个Linux发行版Alpha发布",
+"description": "秉持着“万物皆可 Linux”的信念，创始人 Hector Martin 在 2020 年启动了众筹项目，计划为 Apple Silicon Mac 设备移植 Linux 系统。随后该项目被命名为 Asahi Linux，随后开发进入快车道，今天普通苹果用户也可以在自己的 M1 Mac 设备上尝试安装了。 阅读全文",
+"url": "https://www.cnbeta.com/articles/tech/1249155.htm",
+"urlToImage": "https://www.cnbeta.com//player.bilibili.com/player.html?bvid=BV15U4y1Z7KG&page=1\" width=\"750\" height=\"480\" frameborder=\"0\"></iframe></p><p style=\"text-align: left;\">Linux 内核在 2021 年 6 月加入了对 Linux 内核的支持，也就是<a data-link=\"1\" href=\"https://apple.pvxt.net/c/1251234/435400/7639?u=https%3A%2F%2Fwww.apple.com%2Fcn%2Fmusic%2F\" target=\"_blank\">苹果</a>宣布该芯片之后的 7 个月后。那时，Asahi Linux项目已经形成，并在社区的帮助下记录了M1的进程。Asahi现在已经足够友好和稳定，普通Linux用户可以安装。Martin 表示现阶段 Alpha 版本只是针对“开发者和资深用户”，但“欢迎所有人都来尝试下，但是部分功能可能有点粗糙”。</p><p style=\"text-align:center\"><img src=\"https://static.cnbetacdn.com/article/2022/0321/d6d61a955fbe86a.webp",
+"publishedAt": "2022-03-21T00:35:04Z",
+"content": "Linux 2021 6 Linux 7 Asahi LinuxM1AsahiLinuxMartin Alpha \r\nAsahi M1M1 Pro M1 Max M1 Ultra macOS M1 iPadAsahi USB type-AUSB over thunderboltWi-Fi\r\n GPU M1CPU\r\nM1LinuxChromiumAsahi\"\"MacBook16:10"
+},
+-{
+-"source": {
+"id": "al-jazeera-english",
+"name": "Al Jazeera English"
+},
+"author": "Liam Gibson",
+"title": "As global brands shun Russia, Asian firms sit out controversy",
+"description": "Different government policies and public perceptions fuel reluctance to follow Western-led corporate exodus, experts say",
+"url": "https://www.aljazeera.com/economy/2022/3/21/as-firms-shun-russia-asias-brands-demur-on-corporate-exodus",
+"urlToImage": "https://www.aljazeera.com/wp-content/uploads/2021/01/367268812.jpg?resize=1200%2C630",
+"publishedAt": "2022-03-21T05:35:17Z",
+"content": "Taipei, Taiwan As companies exit Russia en masse following the invasion of Ukraine, Asian brands have been conspicuously absent from the corporate exodus.\r\nOf the more than 370 global companies that … [+8673 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "GSMArena.com"
+},
+"author": "Chip",
+"title": "Top 10 trending phones of week 11",
+"description": "Samsung is the dominant force in our trending chart this week, its newly unveiled Galaxy A series resonating well with you guys. The Galaxy A33 became the most popular phone in our database, follwed by the Galaxy A53.\n\nLast week's leader, the Apple iPhone SE …",
+"url": "https://www.gsmarena.com/top_10_trending_phones_of_week_11-news-53641.php",
+"urlToImage": "https://fdn.gsmarena.com/imgroot/news/19/04/top10-trending-phones/-952x498w6/gsmarena_002.jpg",
+"publishedAt": "2022-03-21T04:19:01Z",
+"content": "Samsung is the dominant force in our trending chart this week, its newly unveiled Galaxy A series resonating well with you guys. The Galaxy A33 became the most popular phone in our database, follwed … [+574 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Variety"
+},
+"author": "Clayton Davis",
+"title": "The Oscar Race is Extremely Loud, and Incredibly Too Close to Call",
+"description": "This past weekend proved to be a wild ride on the awards circuit. The Producers Guild of America Awards bestowed their top honors upon Apple Original Film’s “CODA” on Saturday night while the Cinema Audio Society went with Warner Bros’ “Dune.” At the Writers …",
+"url": "https://variety.com/2022/awards/awards/oscars-predictions-coda-the-power-of-the-dog-belfast-best-picture-1235210253/",
+"urlToImage": "https://variety.com/wp-content/uploads/2022/03/3-Split-Layout-2-2.jpg?w=1000",
+"publishedAt": "2022-03-21T04:45:08Z",
+"content": "This past weekend proved to be a wild ride on the awards circuit.\r\nThe Producers Guild of America Awards bestowed their top honors upon Apple Original Film’s “CODA” on Saturday night while the Cinema… [+8070 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Geekissimo.com"
+},
+"author": "Antonio Mele",
+"title": "Pesanti critiche sull’aggiornamento iOS 15.4 a proposito della batteria",
+"description": "Indicazioni chiare sull'autonomia dei dispositivi dopo l'arrivo dell'aggiornamento iOS 15.4",
+"url": "https://geekissimo.com/2022/03/21/pesanti-critiche-sullaggiornamento-ios-15-4-a-proposito-della-batteria/",
+"urlToImage": "https://geekissimo.com/wp-content/uploads/2022/03/iOS-15.4-1-e1647736076767.jpg",
+"publishedAt": "2022-03-21T00:22:37Z",
+"content": "Aspre polemiche attorno all’aggiornamento iOS 15.4, in riferimento ad un delicato argomento come quello della durata della batteria. Questa settimana, Apple ha lanciato iOS 15.4 . Se hai un dispositi… [+2490 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Creative Bloq"
+},
+"author": "Jon Stapley",
+"title": "iPad vs Samsung tablets: which should you buy?",
+"description": "Thinking about buying a tablet? We pit iPads vs Samsung tablets to determine which is the best tablet for your buck.",
+"url": "https://www.creativebloq.com/features/ipads-vs-samsung-tablets",
+"urlToImage": "https://cdn.mos.cms.futurecdn.net/j7xERK9JwRjzVA6jboNiEb-1200-80.jpg",
+"publishedAt": "2022-03-21T01:08:35Z",
+"content": "The question of iPads vs Samsung tablets is relevant no matter what level you’re buying at. Whether you’re a beginner looking for something cheap and accessible, or you’re a pro creative who needs a … [+6618 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Deadline"
+},
+"author": "Brandon Choe",
+"title": "Guild Of Music Supervisors Awards: ‘Tick, Tick… Boom!’, ‘Lovecraft Country’, ‘The White Lotus’ Among Winners – Full List",
+"description": "The Guild of Music Supervisors held its 12th annual awards ceremony virtually to celebrate outstanding achievement in the craft of music supervision in film, television, documentaries, games, advertising and trailers. Mandi Collier took home two awards for he…",
+"url": "https://deadline.com/2022/03/guild-of-music-supervisors-awards-tick-tick-boom-lovecraft-country-the-white-lotus-among-winners-full-list-1234982957/",
+"urlToImage": "https://deadline.com/wp-content/uploads/2022/03/Guild-of-Music-Supervisors-12th-Annual-Awards.jpg?w=1000",
+"publishedAt": "2022-03-21T03:38:45Z",
+"content": "The Guild of Music Supervisors held its 12th annual awards ceremony virtually to celebrate outstanding achievement in the craft of music supervision in film, television, documentaries, games, adverti… [+3979 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Deadline"
+},
+"author": "Pete Hammond",
+"title": "Oscars: ‘CODA’s’ Winning Weekend Turns Best Picture Into A Horserace, But How Reliable Are The Guilds To A Global Academy? (ANALYSIS)",
+"description": "CODA is on a roll this final weekend of Oscar voting (Ballots are due at 5:00pm pt on Tuesday) , getting a major shot of adrenaline by taking the PGA’s top Best Picture prize, and now just picking up the WGA award for Adapted Screenplay today. If you are coun…",
+"url": "https://deadline.com/2022/03/oscars-coda-power-of-the-dog-pga-wga-1234982872/",
+"urlToImage": "https://deadline.com/wp-content/uploads/2022/03/CODA-PGA-Awards.jpg?w=531",
+"publishedAt": "2022-03-21T02:02:15Z",
+"content": "Deadline\r\nCODA is on a roll this final weekend of Oscar voting (ballots are due at 5 p.m. PT on Tuesday), getting a major shot of adrenaline by taking the PGA’s top Best Picture prize, and now just p… [+6531 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Appbank.net"
+},
+"author": "テクノロジー記事班",
+"title": "iPhoneに付属しているSIMピンに「チタンの2倍の強度を持つ新素材」が使われている理由",
+"description": "» 「iPhone 14 Pro」はより縦長な画面で新チップ「A16 Bionic」搭載、衛星通信機能も開発中との噂 iPhoneの同梱品の1つとして「SIMピン」と呼ばれるツールがあります。 SIM",
+"url": "https://www.appbank.net/2022/03/21/technology/2209173.php",
+"urlToImage": "https://www.appbank.net/wp-content/uploads/2022/03/20220312-simpinsamune-1.jpeg",
+"publishedAt": "2022-03-21T02:48:32Z",
+"content": "» iPhone 14 ProA16 Bionic\r\niPhone1SIM\r\nSIMAppleSIMAppleYouTubeApple Explained\r\n*Category\r\n Technology, iPhone, Apple*SourceApple Explained,Cult of Mac\r\niPhoneSIM\r\nAppleiPhoneiPhoneSIMSIMSIMSIM\r\nSIMAp… [+233 chars]"
+}
+]
+}
+Get the current top headlines for a country or category
+News API is great as a data source for news tickers and other applications where you want to show your users live headlines. We track headlines in 7 categories across over 50 countries, and at over a hundred top publications and blogs, in near real time.
+
+Let's make a request to get live top headlines in the US right now. We'll use the /top-headlines endpoint for this.
+
+This returns a JSON object with the results in an array we can iterate over.
+
+For more information about the /top-headlines endpoint, including valid parameters for focusing on specific countries and categories, see the Top Headlines endpoint reference.
+
