@@ -1,0 +1,13 @@
+API KEY = ca4b280deb11984b158c7aa6a28581f7
+
+LINK = https://api.themoviedb.org/3/movie/550?api_key=ca4b280deb11984b158c7aa6a28581f7
+
+/movie/latest --> to get latest movies
+
+/////////API END POINT:
+https://api.themoviedb.org/3/movie/popular?api_key=ca4b280deb11984b158c7aa6a28581f7&page=2 --> GET POPULAR MOVIES(PROGRESS 2)
+
+https://api.themoviedb.org/3/movie/upcoming?api_key=ca4b280deb11984b158c7aa6a28581f7 ---> GET UPCOMING MOVIES(PROGRESS 4)
+
+https://image.tmdb.org/t/p/w600_and_h900_bestv2/{IMAGE_ID} --> To get images
+EX: https://image.tmdb.org/t/p/w600_and_h900_bestv2/qBLEWvJNVsehJkEJqIigPsWyBse.jpg
