@@ -46,8 +46,8 @@ function createNewsElement(news){
     item.appendChild(title);
 
     const content =document.createElement("p");
-    title.textContent = news.title;
-    title.setAttribute("class","news-content");
+    content.textContent = news.description;
+    content.setAttribute("class","news-content");
     item.appendChild(content);
 
     const readMore =document.createElement("button");
