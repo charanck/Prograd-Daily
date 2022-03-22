@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.main-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.item{
+    max-width: 350px;
+    margin: 1rem 0;
+    padding:1rem;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.item:hover{
+    border-color: #333; 
+}
+
+img{
+    display:block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+
+@media (max-width:500px){
+    .main-container{
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
