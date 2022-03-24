@@ -10,3 +10,7 @@ function handleLogin(event){
         alert("Wrong Credential!!!");
     }
 }
+
+function handleEditSaveIssue(issue){
+    alert("Save the Edit");
+}
