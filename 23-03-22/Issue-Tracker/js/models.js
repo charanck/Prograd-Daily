@@ -1,9 +1,10 @@
 class User {
     static users = [];
-    constructor (id, userName, passWord) {
+    constructor (id, userName, passWord,role) {
         this.setId(id);
         this._setUserName(userName);
         this._setPassWord(id,passWord);
+        this.setRole(role);
         User.users.push(this);
         User.save();
     }
@@ -17,6 +18,14 @@ class User {
         this.id = Math.random()
             .toString(36)
             .slice(2);
+    }
+
+    getRole(){
+        return this.role;
+    }
+
+    setRole(role){
+        this.role = role;
     }
 
     getUserName () {
@@ -67,7 +76,7 @@ class User {
     static loadToMemory () {
         const users = JSON.parse(localStorage.getItem("users"));
         users?.forEach(user => {
-            new User(user.id, user.userName, user.passWord);
+            new User(user.id, user.userName, user.passWord,user.role);
         });
     }
 }
