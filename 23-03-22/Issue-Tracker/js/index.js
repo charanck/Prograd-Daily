@@ -3,20 +3,20 @@ User.loadToMemory();
 Issue.loadToMemory();
 Comment.loadToMemory();
 
-// const charan = new User(null,"Charan","Charan@123");
-// const issue1 = new Issue(null,"Some random description","High","backlog",charan,charan,null);
-// const comment1 = new Comment(null,"New COmment@!!",charan,issue1,null);
-// console.log(issue1);
+// State
+let state = {
+    user:null
+}
+if(JSON.parse(localStorage.getItem('state'))) state = JSON.parse(localStorage.getItem('state'));
+
+function setUserState(user){
+    state.user = user;
+    localStorage.removeItem('state');
+    localStorage.setItem('state',JSON.stringify(state));
+}
+// Event Listeners
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
 
 
-
-// const charan = User.getAllUsers()[0];
-// const issue1 = Issue.getAllIssues()[0];
-// console.log(Comment);
-
-// const comment2 = new Comment("SHIT",charan,issue1);
-
-// Comment.delete(Comment.getAllComments()[0]);
-
-// id, comment, commentedBy, commentTo, commentedOn
 
