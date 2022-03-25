@@ -169,7 +169,7 @@ class Issue {
 
     setCreatedOn (createdOn) {
         if (createdOn) this.createdOn = createdOn;
-        else this.createdOn = new Date();
+        else this.createdOn = new Date().toISOString();
     }
 
     getCreatedBy () {

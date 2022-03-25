@@ -57,3 +57,41 @@ function handleToggleTableCardView(e){
     if(document.querySelector('.tableView')) issueCard();
     else issueTable();
 }
+
+function handleAddIssue(e){
+    e.preventDefault();
+    const description = document.getElementById('description').value;
+    const priority = document.getElementById('priority').value;
+    const stage = document.getElementById('stage').value;
+    let assignedTo;
+    User.getAllUsers().forEach(user => {
+        if(document.getElementById('assignedto').value == user.getUserName()) assignedTo = user;
+    });
+    const createdBy = state.user;
+    new Issue(null,description,priority,stage,assignedTo,createdBy,null);  
+    homeComponent();        
+    alertComponent("Issue Added Successsfully","success");
+}
+
+function handleDeleteIssue(issue){
+    Issue.delete(issue);
+    homeComponent();   
+    alertComponent("Issue Deleted Successsfully","warning");
+}
+
+function handleRegister(){
+    const userName = document.getElementById('username').value;
+    let duplicate = false;
+    User.getAllUsers().forEach(user => {if(user.getUserName() == userName)duplicate = true;});
+    if(duplicate) return alertComponent("Username already exists!!!","warning");
+    const passWord = document.getElementById('password').value;
+    const repeatPassWord = document.getElementById('repeatpassword').value;
+
+    if(passWord != repeatPassWord) return alertComponent("Password Doesn't match!!!","warning");
+    const passWordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    if(!passWord.match(passWordRegex)) return alertComponent("Password doesnt match the criteria!!","danger");
+    const role = document.getElementById('role').value;
+    new User(null,userName,passWord,role);
+    loginComponent();
+    alertComponent("Account Created Successfully!!!","success");
+}
