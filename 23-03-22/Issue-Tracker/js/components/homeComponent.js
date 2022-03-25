@@ -61,7 +61,6 @@ function issueCard () {
     document.getElementById("app").innerHTML = "";
     document.getElementById("app").appendChild(navBarComponent());
     document.getElementById("app").appendChild(filterComponent());
-    // document.getElementById("app").appendChild(newElement('h1',{class:"cardView"},"CARD VIEW",""));
 
     const cardContainer = newElement(
         "div",

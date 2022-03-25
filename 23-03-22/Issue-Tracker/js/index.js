@@ -10,7 +10,6 @@ let state = {
 if(JSON.parse(localStorage.getItem('state'))){
     const x =JSON.parse(localStorage.getItem('state'));
     const tempUser = User.getAllUsers().filter(user => user.getUserName() == x.user.userName)[0];
-    // User(x.user.id,x.user.userName,x.user.passWord,x.user.role);
     state.user = tempUser;
 }
 

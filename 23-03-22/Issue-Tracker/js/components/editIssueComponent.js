@@ -294,7 +294,7 @@ function editIssueComponent (issue) {
             const toast = newElement(
                 "div",
                 {
-                    class: "toast ml-5 my-3",
+                    class: "toast ml-5 my-3 border p-1",
                     role: "alert",
                     "aria-live": "assertive",
                     "aria-atomic": "true"
