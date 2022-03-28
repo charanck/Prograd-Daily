@@ -1,5 +1,4 @@
 function loginComponent () {
-    if (state.user) return (window.location.hash = "home");
     const loginPage = newElement(
         "div",
         {

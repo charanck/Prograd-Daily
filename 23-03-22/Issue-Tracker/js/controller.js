@@ -81,6 +81,7 @@ function handleDeleteIssue(issue){
 
 function handleRegister(){
     const userName = document.getElementById('username').value;
+    if(userName == "") return alertComponent("Username shouldn't be empty!!!","danger"); 
     let duplicate = false;
     User.getAllUsers().forEach(user => {if(user.getUserName() == userName)duplicate = true;});
     if(duplicate) return alertComponent("Username already exists!!!","warning");
