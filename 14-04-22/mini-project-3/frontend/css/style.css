@@ -1,0 +1,18 @@
+/* Login page Styling */
+.login-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: ease-in-out;
+    transition:.25s;
+}
+
+.draggable{
+    position: relative;
+}
+
+.draggable:hover{
+    box-shadow: 1px 1px 1px 1px #333;
+}
