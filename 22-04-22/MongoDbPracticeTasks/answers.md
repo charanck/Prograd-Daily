@@ -25,15 +25,15 @@
 # 9. Write a MongoDB query to find the restaurants that achieved a score, more than 80 but less than 100.
 ``` db.restaurants.find({grades : { $elemMatch:{"score":{$gt : 80,$lt:100}}}})```
 
-# 10. Write a MongoDB query to find the restaurants which locate in latitude value less than ```95.754168
-``` db.restaurants.find({"address.coord.0":{$lte:95.754168}})```
+# 10. Write a MongoDB query to find the restaurants which locate in latitude value less than -95.754168
+``` db.restaurants.find({"address.coord.0":{$lte:-95.754168}})```
 
-# 11. Write a MongoDB query to find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and latitude less than ```65.754168.
-``` db.restaurants.find({"address.coord.0":{$lte:65.754168},"cuisine":{$ne:"American"},"grades":{$elemMatch:{"score":{$gt:70}}}})```
+# 11. Write a MongoDB query to find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and latitude less than -65.754168.
+``` db.restaurants.find({"address.coord.0":{$lte:-65.754168},"cuisine":{$ne:"American"},"grades":{$elemMatch:{"score":{$gt:70}}}})```
 
-# 12. Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American' and achieved a score more than 70 and located in the longitude less than ```65.754168.
+# 12. Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American' and achieved a score more than 70 and located in the longitude less than -65.754168.
 Note : Do this query without using $and operator.
-``` db.restaurants.find({"cuisine":{$ne:"American"},"grades":{$elemMatch:{score:{$gt:70}}},"address.coord.0":{$lte:65.754168}})```
+``` db.restaurants.find({"cuisine":{$ne:"American"},"grades":{$elemMatch:{score:{$gt:70}}},"address.coord.0":{$lte:-65.754168}})```
 
 # 13. Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American ' and achieved a grade point 'A' not belongs to the borough Brooklyn. The document must be displayed according to the cuisine in descending order.
 ``` db.restaurants.find({"cuisine":{$ne:"American"},"grades":{$elemMatch:{grade:{$eq:'A'}}},"borough":{$ne:"Brooklyn"}}).sort({"cuisine":-1})```
