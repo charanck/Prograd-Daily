@@ -1,0 +1,11 @@
+div{
+    position: fixed;
+    top:10px;
+    left:100px;
+    text-align: center;
+    width: max-content;
+    background-color: rgb(255, 75, 75);
+    color:black;
+    box-shadow: #333 5px 5px 10px;
+    border-radius: 5px;
+}
