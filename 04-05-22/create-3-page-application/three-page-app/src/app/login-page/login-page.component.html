@@ -1,0 +1,14 @@
+<div>
+    <a routerLink="/signup">signup</a><br>
+    <a routerLink="/dashboard">dashboard</a>
+</div>
+<hr>
+<div class="container">
+    <form (ngSubmit) = "onSubmit()">
+        <label for="username" >UserName: </label>
+        <input type="text" name='username' id='username' [(ngModel)]="userName"><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" [(ngModel)] = "passWord"><br>
+        <button type="submit">LogIn</button>
+    </form>
+</div>
